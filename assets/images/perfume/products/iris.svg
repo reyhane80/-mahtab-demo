@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#221C19"/><stop offset="1" stop-color="#0E0C0B"/></linearGradient>
+<radialGradient id="l" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="1000" fill="url(#g)"/><rect width="800" height="1000" fill="url(#l)"/>
+<ellipse cx="400" cy="834" rx="228" ry="30" fill="#C8924A" opacity=".09"/>
+<g transform="translate(400.0 520.0) scale(1.900) translate(-200 -200)"><path d="M180 100h40v44h-40Z" fill="#8A7A66" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M170 70q30-30 60 0v40h-60Z" fill="#C8924A" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M200 140q95 0 95 105t-95 110-95-110 95-105Z" fill="#E9E1EE" stroke="#C8924A" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" opacity=".96"/>
+<path d="M200 140q95 0 95 105t-95 110-95-110 95-105Z" fill="url(#l)"/>
+<path d="M140 175v140" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".28"/>
+<rect x="165" y="230" width="70" height="44" fill="#EADFCB" stroke="#C8924A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M180 248h40M186 260h28" stroke="#3A302A" stroke-width="3"/></g>
+</svg>

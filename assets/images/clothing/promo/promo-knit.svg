@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DDD2"/><stop offset="1" stop-color="#D6CBBB"/></linearGradient>
+<radialGradient id="l" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="600" height="750" fill="url(#g)"/><rect width="600" height="750" fill="url(#l)"/>
+<ellipse cx="300" cy="637" rx="180" ry="24" fill="#2A2724" opacity=".09"/>
+<g transform="translate(300.0 390.0) scale(1.496) translate(-200 -200)"><path d="M145 80q55 30 110 0l75 45-20 205-45-8-3-150v210H138V172l-3 150-45 8-20-205Z" fill="#B4532A" stroke="#2A2724" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M145 80 200 200 255 80" fill="#F6F4F0" stroke="#2A2724" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M140 340h120M140 330h120" fill="none" stroke="#2A2724" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M85 300l45 6M315 300l-45 6" fill="none" stroke="#2A2724" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="200" cy="230" r="5" fill="#F6F4F0" stroke="#2A2724" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="200" cy="275" r="5" fill="#F6F4F0" stroke="#2A2724" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="200" cy="320" r="5" fill="#F6F4F0" stroke="#2A2724" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></g>
+</svg>

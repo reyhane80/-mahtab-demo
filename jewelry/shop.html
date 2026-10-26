@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="demo-jewelry" data-demo="jewelry">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>فروشگاه | مهتاب | طلا و جواهر</title>
+  <meta name="description" content="فروشگاه اینترنتی طلا، جواهر و زیورآلات با گواهی اصالت">
+  <meta name="theme-color" content="#FAF7F2">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- فونت‌ها (داخل فایل CSS جاسازی شده‌اند تا بدون سرور هم کار کنند) -->
+
+  <link rel="preload" href="../assets/css/fonts/vazirmatn.css" as="style">
+  <link rel="stylesheet" href="../assets/css/fonts/vazirmatn.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../assets/css/fonts/vazirmatn.css"></noscript>
+
+  <link rel="preload" href="../assets/css/fonts/samim.css" as="style">
+  <link rel="stylesheet" href="../assets/css/fonts/samim.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../assets/css/fonts/samim.css"></noscript>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- تغییرات شخصی خود را در custom.css بنویسید (همیشه آخر بارگذاری می‌شود) -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- آیکون‌ها (طراحی اختصاصی قالب، خطی ۲۴×۲۴). استفاده: <svg class="icon"><use href="#i-search"/></svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="0 0 40 40"><path d="M25.5 6.5a14 14 0 1 0 8 23.6A11.5 11.5 0 0 1 25.5 6.5Z" fill="currentColor"/><path d="M29.5 9.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9Z" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.75"/><path d="M4.75 20c.9-3.6 3.8-5.5 7.25-5.5s6.35 1.9 7.25 5.5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" class="i-heart"><path d="M12 19.5s-7.5-4.4-7.5-10A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7.5 2.5c0 5.6-7.5 10-7.5 10Z"/></symbol>
+  <symbol id="i-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 4 7l3 3M4 7h12M17 14l3 3-3 3M20 17H8"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 8h14l-1 12H6Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M10 17h10"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m5-5-5 5 5 5"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-5 5 5-5 5 5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.9Z" fill="currentColor"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4-2 1.5a10 10 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 6.5h11v9H3ZM14 9.5h3.5l3 3v3H14Z"/><circle cx="7" cy="17.5" r="1.8" fill="currentColor" stroke="none"/><circle cx="17" cy="17.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5 4.5 8.5 8 12"/><path d="M4.5 8.5H14a5.5 5.5 0 0 1 0 11h-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5 19 6v5.5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6Z"/><path d="m9 12 2.2 2.2L15.5 10" stroke-linecap="round"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14v-2a7.5 7.5 0 0 1 15 0v2"/><path d="M4.5 13.5h3v5h-1.5a1.5 1.5 0 0 1-1.5-1.5ZM19.5 13.5h-3v5h1.5a1.5 1.5 0 0 0 1.5-1.5ZM16.5 18.5c0 1.5-1.5 2-4 2"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="5.5" width="16" height="14" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 9h16v3.5H4ZM5.5 12.5h13V20h-13ZM12 9v11"/><path d="M12 9C10.5 5 7 5 7.5 7.5 8 9 12 9 12 9Zm0 0c1.5-4 5-4 4.5-1.5C16 9 12 9 12 9Z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.5a6 6 0 0 1-6-6c0-4 3.5-5.5 4-10 3 2 3 5 3 6.5 1-1 1.5-2 1.6-3.2C17 9.5 18 12 18 14.5a6 6 0 0 1-6 6Z"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.5 2.5 0 0 0 5 0Zm14 0-2.5 6a2.5 2.5 0 0 0 5 0Z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 8 12 4l8 4v8.5L12 20.5 4 16.5Z"/><path d="m4 8 8 4 8-4M12 12v8.5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14Z"/><path d="M5 19c3-4 6-7 9-9"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="12.5" rx="1.5"/><path d="M7 10.5h6M7 14h10" stroke-linecap="round"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 8h3.5L9 5.5h6L16.5 8H20v11H4Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5s6 6.5 6 10.5a6 6 0 0 1-12 0c0-4 6-10.5 6-10.5Z"/></symbol>
+  <symbol id="i-certificate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="12" rx="1.5"/><path d="M7 8.5h10M7 12h5" stroke-linecap="round"/><circle cx="16" cy="15.5" r="2.3"/><path d="m14.8 17.5-.8 3 2-1 2 1-.8-3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M15.5 4.5 19.5 8.5 9 19H5v-4Z"/><path d="m13 7 4 4"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M3.5 10h17"/><path d="M7 15h3" stroke-linecap="round"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r=".9" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M20.5 4.5 3.5 11l5.5 2 2 6 3-3.5 4.5 3.5Z"/><path d="m9 13 8-5.5"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4.5 19.5 5.6 16A8 8 0 1 1 8.4 18.6Z"/><path d="M9.3 8.8c.2 2.6 2.4 4.9 5 5.4l1.1-1.3-1.7-.9-.8.8c-1-.4-1.9-1.3-2.4-2.4l.8-.8-.8-1.8Z" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+  <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+<!-- ===== شروع: نوار بالای صفحه ===== -->
+<div class="topbar" id="top">
+  <div class="container-site topbar-inner">
+    <p class="topbar-text">قیمت‌ها بر اساس نرخ روز طلا · گواهی اصالت و فاکتور رسمی با هر سفارش</p>
+    <ul role="list" class="topbar-links" aria-label="پیوندهای سریع">
+      <li><a href="track-order.html">پیگیری سفارش</a></li>
+      <li><a href="faq.html">سوالات متداول</a></li>
+      <li><a href="contact.html">تماس با ما</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ===== پایان: نوار بالای صفحه ===== -->
+
+<!-- ===== شروع: هدر (نوع آن در demo.json با گزینه‌ی header تعیین می‌شود: centered یا search) ===== -->
+<header class="site-header header--centered" id="site-header">
+  <div class="container-site header-main">
+
+    <div class="header-start">
+      <button type="button" class="icon-btn header-burger" data-drawer-open="mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="باز کردن منو">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+      <button type="button" class="icon-btn header-search-toggle" data-search-toggle aria-controls="search-panel" aria-expanded="false" aria-label="جست‌وجو">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="search-toggle-label" aria-hidden="true">جست‌وجو</span>
+      </button>
+    </div>
+
+    <a class="logo" href="index.html" aria-label="مهتاب، صفحه‌ی اصلی">
+  <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <span class="logo-text">
+    <span class="logo-name">مهتاب</span>
+    <span class="logo-tag">طلا و جواهر</span>
+  </span>
+</a>
+
+    <div class="header-actions">
+      <a class="icon-btn desk-only" href="login.html" aria-label="ورود یا ثبت‌نام"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></a>
+      <a class="icon-btn desk-only" href="compare.html" aria-label="مقایسه‌ی محصولات">
+        <svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg><span class="count-badge" data-compare-count hidden></span>
+      </a>
+      <a class="icon-btn desk-only" href="wishlist.html" aria-label="علاقه‌مندی‌ها">
+        <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span class="count-badge" data-wish-count hidden></span>
+      </a>
+      <button type="button" class="icon-btn" data-drawer-open="mini-cart" aria-controls="mini-cart" aria-expanded="false" aria-label="سبد خرید، خالی" data-cart-open>
+        <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span class="count-badge" data-cart-count hidden></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- منوی اصلی دسکتاپ؛ گزینه‌های دارای مگامنو با کلیک یا نگه داشتن ماوس باز می‌شوند -->
+  <nav class="main-nav" aria-label="منوی اصلی">
+    <ul class="container-site main-nav-list">
+
+      <li class="main-nav-item">
+
+        <button type="button" class="main-nav-link" aria-expanded="false" aria-controls="mega-0" data-mega-trigger>
+          طلا <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="mega" id="mega-0" data-mega>
+          <div class="container-site mega-inner">
+            <div class="mega-columns">
+              <div class="mega-head">
+                <p class="mega-title font-heading">طلا</p>
+                <a class="mega-all" href="shop.html?metal=gold">مشاهده‌ی همه <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">زیورآلات</p>
+                <ul>
+                  <li><a href="shop.html?metal=gold&amp;cat=ring">انگشتر</a></li><li><a href="shop.html?metal=gold&amp;cat=necklace">گردنبند</a></li><li><a href="shop.html?metal=gold&amp;cat=bracelet">دستبند</a></li><li><a href="shop.html?metal=gold&amp;cat=earring">گوشواره</a></li><li><a href="shop.html?metal=gold&amp;cat=pendant">آویز</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">بر اساس رنگ طلا</p>
+                <ul>
+                  <li><a href="shop.html?metal=gold&amp;tone=yellow">طلای زرد</a></li><li><a href="shop.html?metal=gold&amp;tone=white">طلای سفید</a></li><li><a href="shop.html?metal=gold&amp;tone=rose">رزگلد</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">کالکشن‌ها</p>
+                <ul>
+                  <li><a href="shop.html?collection=wedding">حلقه‌ی ازدواج</a></li><li><a href="shop.html?collection=engagement">انگشتر نامزدی</a></li><li><a href="shop.html?collection=bridal">سرویس عروس</a></li><li><a href="shop.html?collection=minimal">روزمره و مینیمال</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="mega-promos">
+
+              <a class="promo-card" href="shop.html?collection=wedding">
+                <img src="../assets/images/jewelry/promo/promo-wedding.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+                <span class="promo-card-body">
+                  <span class="promo-card-title block">کالکشن عقد و نامزدی</span>
+                  <span class="promo-card-text block">با حکاکی رایگان نام</span>
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <button type="button" class="main-nav-link" aria-expanded="false" aria-controls="mega-1" data-mega-trigger>
+          جواهر <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="mega" id="mega-1" data-mega>
+          <div class="container-site mega-inner">
+            <div class="mega-columns">
+              <div class="mega-head">
+                <p class="mega-title font-heading">جواهر</p>
+                <a class="mega-all" href="shop.html?cat=gemstone">مشاهده‌ی همه <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">سنگ‌ها</p>
+                <ul>
+                  <li><a href="shop.html?stone=diamond">برلیان</a></li><li><a href="shop.html?stone=emerald">زمرد</a></li><li><a href="shop.html?stone=ruby">یاقوت</a></li><li><a href="shop.html?stone=turquoise">فیروزه</a></li><li><a href="shop.html?stone=pearl">مروارید</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="mega-promos">
+
+              <a class="promo-card" href="shop.html?stone=turquoise">
+                <img src="../assets/images/jewelry/promo/promo-turquoise.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+                <span class="promo-card-body">
+                  <span class="promo-card-title block">فیروزه‌ی نیشابور</span>
+                  <span class="promo-card-text block">با گواهی گوهرشناسی</span>
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="shop.html?metal=silver">نقره</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="shop.html?cat=watch">ساعت</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="shop.html?collection=gift">هدیه</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="faq.html#size">راهنمای سایز</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="blog.html">مجله</a>
+
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- پنل جست‌وجو (در هدر وسط‌چین و موبایل) -->
+  <div class="search-panel" id="search-panel" data-search-panel hidden>
+    <div class="container-site">
+      <form role="search" action="search.html" method="get">
+        <div class="search-field">
+          <label class="sr-only" for="panel-q">جست‌وجو در فروشگاه</label>
+          <input id="panel-q" type="search" name="q" placeholder="جست‌وجوی انگشتر، گردنبند، دستبند…" autocomplete="off">
+          <button type="submit" aria-label="جست‌وجو"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></button>
+        </div>
+      </form>
+      <p class="search-hints">
+        <span>جست‌وجوهای پرطرفدار:</span>
+        <a href="shop.html?cat=ring">انگشتر</a><a href="shop.html?cat=necklace">گردنبند و آویز</a><a href="shop.html?cat=bracelet">دستبند</a><a href="shop.html?cat=earring">گوشواره</a>
+      </p>
+    </div>
+  </div>
+</header>
+<!-- ===== پایان: هدر ===== -->
+
+<!-- ===== شروع: منوی موبایل (کشوی سمت راست) ===== -->
+<div class="drawer drawer-start" id="mobile-menu" role="dialog" aria-modal="true" aria-label="منوی سایت" data-drawer inert>
+  <div class="drawer-head">
+    <a class="logo" href="index.html" aria-label="مهتاب، صفحه‌ی اصلی">
+  <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <span class="logo-text">
+    <span class="logo-name">مهتاب</span>
+    <span class="logo-tag">طلا و جواهر</span>
+  </span>
+</a>
+
+    <button type="button" class="icon-btn drawer-close" data-drawer-close aria-label="بستن منو"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="drawer-body">
+    <form role="search" action="search.html" method="get">
+      <div class="search-field">
+        <label class="sr-only" for="menu-q">جست‌وجو در فروشگاه</label>
+        <input id="menu-q" type="search" name="q" placeholder="جست‌وجوی انگشتر، گردنبند، دستبند…" autocomplete="off">
+        <button type="submit" aria-label="جست‌وجو"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></button>
+      </div>
+    </form>
+
+    <ul class="m-nav">
+
+      <li>
+
+        <button type="button" class="m-nav-link" aria-expanded="false" aria-controls="m-sub-0" data-disclosure>
+          طلا <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="m-sub" id="m-sub-0" hidden>
+
+          <p class="m-sub-title">زیورآلات</p>
+          <ul><li><a href="shop.html?metal=gold&amp;cat=ring">انگشتر</a></li><li><a href="shop.html?metal=gold&amp;cat=necklace">گردنبند</a></li><li><a href="shop.html?metal=gold&amp;cat=bracelet">دستبند</a></li><li><a href="shop.html?metal=gold&amp;cat=earring">گوشواره</a></li><li><a href="shop.html?metal=gold&amp;cat=pendant">آویز</a></li></ul>
+
+          <p class="m-sub-title">بر اساس رنگ طلا</p>
+          <ul><li><a href="shop.html?metal=gold&amp;tone=yellow">طلای زرد</a></li><li><a href="shop.html?metal=gold&amp;tone=white">طلای سفید</a></li><li><a href="shop.html?metal=gold&amp;tone=rose">رزگلد</a></li></ul>
+
+          <p class="m-sub-title">کالکشن‌ها</p>
+          <ul><li><a href="shop.html?collection=wedding">حلقه‌ی ازدواج</a></li><li><a href="shop.html?collection=engagement">انگشتر نامزدی</a></li><li><a href="shop.html?collection=bridal">سرویس عروس</a></li><li><a href="shop.html?collection=minimal">روزمره و مینیمال</a></li></ul>
+
+          <a class="m-all" href="shop.html?metal=gold">مشاهده‌ی همه‌ی طلا</a>
+        </div>
+
+      </li>
+
+      <li>
+
+        <button type="button" class="m-nav-link" aria-expanded="false" aria-controls="m-sub-1" data-disclosure>
+          جواهر <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="m-sub" id="m-sub-1" hidden>
+
+          <p class="m-sub-title">سنگ‌ها</p>
+          <ul><li><a href="shop.html?stone=diamond">برلیان</a></li><li><a href="shop.html?stone=emerald">زمرد</a></li><li><a href="shop.html?stone=ruby">یاقوت</a></li><li><a href="shop.html?stone=turquoise">فیروزه</a></li><li><a href="shop.html?stone=pearl">مروارید</a></li></ul>
+
+          <a class="m-all" href="shop.html?cat=gemstone">مشاهده‌ی همه‌ی جواهر</a>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="shop.html?metal=silver">نقره</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="shop.html?cat=watch">ساعت</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="shop.html?collection=gift">هدیه</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="faq.html#size">راهنمای سایز</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="blog.html">مجله</a>
+
+      </li>
+
+    </ul>
+
+    <ul class="m-links">
+      <li><a href="login.html"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg> ورود / ثبت‌نام</a></li>
+      <li><a href="wishlist.html"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> علاقه‌مندی‌ها</a></li>
+      <li><a href="compare.html"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg> مقایسه</a></li>
+      <li><a href="track-order.html"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> پیگیری سفارش</a></li>
+    </ul>
+
+    <p class="m-contact">پشتیبانی: <a href="tel:+982100000000" dir="ltr">۰۲۱ ‑ ۱۲۳۴ ۵۶۷۸</a><br>شنبه تا پنج‌شنبه، ۹ تا ۲۱</p>
+  </div>
+</div>
+<!-- ===== پایان: منوی موبایل ===== -->
+
+<!-- ===== شروع: سبد خرید کشویی (mini-cart) =====
+     سبد سمت کاربر است و در حافظه‌ی مرورگر (localStorage) ذخیره می‌شود؛ هر دمو سبد جداگانه دارد.
+     برای پرداخت واقعی، آن را به فروشگاه یا سیستم سفارش خود وصل کنید (راهنما را ببینید). -->
+<div class="drawer drawer-end" id="mini-cart" role="dialog" aria-modal="true" aria-labelledby="mini-cart-title" data-drawer data-mini-cart inert>
+  <div class="drawer-head">
+    <h2 class="drawer-title" id="mini-cart-title">سبد خرید <span class="text-sm font-normal text-muted" data-cart-heading-count></span></h2>
+    <button type="button" class="icon-btn drawer-close" data-drawer-close aria-label="بستن سبد خرید"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+
+  <div class="drawer-body">
+    <ul class="cart-items" role="list" data-cart-items aria-label="کالاهای سبد خرید"></ul>
+    <div class="cart-empty" data-cart-empty>
+      <svg class="cart-empty-art" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M30 46h60l-5 54H35Z"/>
+        <path d="M46 52V40a14 14 0 0 1 28 0v12" fill="none"/>
+        <path d="M86 26a12 12 0 1 0 8 20 9.5 9.5 0 0 1-8-20Z"/>
+      </svg>
+      <p class="cart-empty-title">سبد خرید شما خالی است</p>
+      <p class="cart-empty-text">هنوز محصولی به سبد اضافه نکرده‌اید.</p>
+      <a href="shop.html" class="btn btn-primary" data-drawer-close>مشاهده‌ی محصولات</a>
+    </div>
+  </div>
+
+  <div class="drawer-foot" data-cart-foot>
+    <div class="cart-total">
+      <span>جمع کل</span>
+      <p><span class="cart-total-amount" data-cart-total>۰</span> <span class="text-sm">تومان</span></p>
+    </div>
+    <p class="cart-note">هزینه‌ی ارسال در مرحله‌ی تسویه حساب محاسبه می‌شود.</p>
+    <div class="cart-buttons">
+      <a href="cart.html" class="btn btn-outline">مشاهده‌ی سبد</a>
+      <a href="checkout.html" class="btn btn-primary">تسویه حساب</a>
+    </div>
+  </div>
+  <p class="sr-only" aria-live="polite" data-cart-status></p>
+</div>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<!-- ===== پایان: سبد خرید کشویی ===== -->
+
+<!-- نوار مسیر (breadcrumb). از page.crumbs پر می‌شود: فهرستی از {label, to?, query?} — بدون to یعنی مورد فعلی (بدون لینک) -->
+<nav class="breadcrumb" aria-label="مسیر صفحه">
+  <ol class="container-site">
+    <li><a href="index.html">جواهرات</a></li>
+
+    <li><svg class="icon breadcrumb-sep" aria-hidden="true"><use href="#i-chevron"/></svg><span aria-current="page">فروشگاه</span></li>
+
+  </ol>
+</nav>
+
+<main id="main">
+  <div class="container-site shop-head">
+    <h1 class="section-title">همه‌ی محصولات</h1>
+    <p class="shop-head-count"><span data-result-count>۸</span> کالا</p>
+  </div>
+
+  <div class="container-site shop-layout">
+    <!-- ===== شروع: فیلترها (در موبایل با دکمه‌ی پایین باز می‌شود) ===== -->
+    <aside class="drawer drawer-start shop-filters" id="shop-filters" data-shop-filters data-drawer aria-label="فیلتر محصولات">
+      <h2 class="sr-only">فیلتر محصولات</h2>
+      <div class="shop-filters-head">
+        <p class="shop-filters-head-title" aria-hidden="true">فیلترها</p>
+        <button type="button" class="icon-btn drawer-close" data-drawer-close aria-label="بستن فیلترها"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-title">محدوده‌ی قیمت</h3>
+        <div class="price-range" data-price-filter data-min="4600000" data-max="52300000">
+          <div class="price-range-fields">
+            <label class="sr-only" for="price-min">حداقل قیمت</label>
+            <input type="number" id="price-min" inputmode="numeric" data-price-min value="4600000" min="4600000" max="52300000">
+            <span aria-hidden="true">تا</span>
+            <label class="sr-only" for="price-max">حداکثر قیمت</label>
+            <input type="number" id="price-max" inputmode="numeric" data-price-max value="52300000" min="4600000" max="52300000">
+          </div>
+          <input type="range" class="price-slider" data-price-slider-min aria-label="حداقل قیمت" min="4600000" max="52300000" value="4600000" step="10000">
+          <input type="range" class="price-slider" data-price-slider-max aria-label="حداکثر قیمت" min="4600000" max="52300000" value="52300000" step="10000">
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-title">دسته‌بندی</h3>
+        <ul class="filter-list" role="list" data-filter="cat">
+
+          <li><label class="filter-check"><input type="checkbox" value="انگشتر"><span>انگشتر</span></label></li>
+
+          <li><label class="filter-check"><input type="checkbox" value="گردنبند"><span>گردنبند</span></label></li>
+
+          <li><label class="filter-check"><input type="checkbox" value="گوشواره"><span>گوشواره</span></label></li>
+
+          <li><label class="filter-check"><input type="checkbox" value="دستبند"><span>دستبند</span></label></li>
+
+          <li><label class="filter-check"><input type="checkbox" value="حلقه‌ی ازدواج"><span>حلقه‌ی ازدواج</span></label></li>
+
+          <li><label class="filter-check"><input type="checkbox" value="آویز"><span>آویز</span></label></li>
+
+          <li><label class="filter-check"><input type="checkbox" value="نقره"><span>نقره</span></label></li>
+
+        </ul>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-title">برند</h3>
+        <ul class="filter-list" role="list" data-filter="brand">
+
+        </ul>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block" data-filters-reset>حذف همه‌ی فیلترها</button>
+    </aside>
+    <!-- ===== پایان: فیلترها ===== -->
+
+    <div class="shop-results">
+      <div class="shop-toolbar">
+        <button type="button" class="btn btn-outline btn-sm shop-filters-toggle" data-drawer-open="shop-filters" aria-controls="shop-filters" aria-expanded="false">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg> فیلترها
+        </button>
+        <label class="shop-sort">
+          مرتب‌سازی
+          <select data-sort>
+            <option value="default">پیشنهادی</option>
+            <option value="newest">جدیدترین</option>
+            <option value="price-asc">ارزان‌ترین</option>
+            <option value="price-desc">گران‌ترین</option>
+            <option value="rating">پربازدیدترین</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="p-grid" data-shop-grid>
+        <!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-solitaire-ring" data-product-name="انگشتر تک‌نگین برلیان" data-product-price="48600000" data-product-image="../assets/images/jewelry/products/ring.svg"
+  data-cat="انگشتر" data-brand="" data-price-sort="48600000" data-rating-sort="4.9" data-badges="bestseller">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/ring.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-soft">پرفروش</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن انگشتر تک‌نگین برلیان به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن انگشتر تک‌نگین برلیان به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">انگشتر</p>
+    <h3 class="p-title"><a href="product.html">انگشتر تک‌نگین برلیان</a></h3>
+
+    <p class="p-meta">طلای سفید ۱۸ عیار · ۲٫۸ گرم<br>برلیان ۰٫۲۵ قیراط</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۹</strong> (۳۱ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+
+        <span><span class="price-now"><span class="num">۴۸<span class="num-sep">٬</span>۶۰۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-pearl-necklace" data-product-name="گردنبند مروارید آب شیرین" data-product-price="19260000" data-product-image="../assets/images/jewelry/products/necklace.svg"
+  data-cat="گردنبند" data-brand="" data-price-sort="19260000" data-rating-sort="4.8" data-badges="sale">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/necklace.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-sale">٪۱۰ تخفیف</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن گردنبند مروارید آب شیرین به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن گردنبند مروارید آب شیرین به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">گردنبند</p>
+    <h3 class="p-title"><a href="product.html">گردنبند مروارید آب شیرین</a></h3>
+
+    <p class="p-meta">طلای زرد ۱۸ عیار · ۴٫۱ گرم<br>مروارید ۷ میلی‌متری</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۸</strong> (۲۲ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+        <del><span class="sr-only">قیمت قبلی: </span><span class="num">۲۱<span class="num-sep">٬</span>۴۰۰<span class="num-sep">٬</span>۰۰۰</span></del>
+        <span><span class="price-now"><span class="num">۱۹<span class="num-sep">٬</span>۲۶۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-turquoise-earring" data-product-name="گوشواره‌ی آویز فیروزه" data-product-price="16900000" data-product-image="../assets/images/jewelry/products/earring.svg"
+  data-cat="گوشواره" data-brand="" data-price-sort="16900000" data-rating-sort="4.7" data-badges="new">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/earring.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-new">جدید</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن گوشواره‌ی آویز فیروزه به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن گوشواره‌ی آویز فیروزه به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">گوشواره</p>
+    <h3 class="p-title"><a href="product.html">گوشواره‌ی آویز فیروزه</a></h3>
+
+    <p class="p-meta">طلای زرد ۱۸ عیار · ۳٫۲ گرم<br>فیروزه‌ی نیشابور</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۷</strong> (۱۸ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+
+        <span><span class="price-now"><span class="num">۱۶<span class="num-sep">٬</span>۹۰۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-chain-bracelet" data-product-name="دستبند زنجیری ظریف" data-product-price="24800000" data-product-image="../assets/images/jewelry/products/bracelet.svg"
+  data-cat="دستبند" data-brand="" data-price-sort="24800000" data-rating-sort="4.8" data-badges="">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/bracelet.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن دستبند زنجیری ظریف به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن دستبند زنجیری ظریف به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">دستبند</p>
+    <h3 class="p-title"><a href="product.html">دستبند زنجیری ظریف</a></h3>
+
+    <p class="p-meta">رزگلد ۱۸ عیار · ۵٫۴ گرم<br>بدون نگین</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۸</strong> (۴۴ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+
+        <span><span class="price-now"><span class="num">۲۴<span class="num-sep">٬</span>۸۰۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-wedding-bands" data-product-name="ست حلقه‌ی ازدواج ساده" data-product-price="52300000" data-product-image="../assets/images/jewelry/products/bands.svg"
+  data-cat="حلقه‌ی ازدواج" data-brand="" data-price-sort="52300000" data-rating-sort="4.9" data-badges="bestseller">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/bands.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-soft">پرفروش</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن ست حلقه‌ی ازدواج ساده به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن ست حلقه‌ی ازدواج ساده به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">حلقه‌ی ازدواج</p>
+    <h3 class="p-title"><a href="product.html">ست حلقه‌ی ازدواج ساده</a></h3>
+
+    <p class="p-meta">طلای زرد ۱۸ عیار · ۱۱ گرم (دو حلقه)<br>حکاکی رایگان نام</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۹</strong> (۵۷ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+
+        <span><span class="price-now"><span class="num">۵۲<span class="num-sep">٬</span>۳۰۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-emerald-pendant" data-product-name="آویز قطره‌ای زمرد" data-product-price="28530000" data-product-image="../assets/images/jewelry/products/pendant.svg"
+  data-cat="آویز" data-brand="" data-price-sort="28530000" data-rating-sort="4.6" data-badges="sale">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/pendant.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-sale">٪۱۰ تخفیف</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن آویز قطره‌ای زمرد به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن آویز قطره‌ای زمرد به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">آویز</p>
+    <h3 class="p-title"><a href="product.html">آویز قطره‌ای زمرد</a></h3>
+
+    <p class="p-meta">طلای سفید ۱۸ عیار · ۲٫۴ گرم<br>زمرد طبیعی</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۶</strong> (۱۲ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+        <del><span class="sr-only">قیمت قبلی: </span><span class="num">۳۱<span class="num-sep">٬</span>۷۰۰<span class="num-sep">٬</span>۰۰۰</span></del>
+        <span><span class="price-now"><span class="num">۲۸<span class="num-sep">٬</span>۵۳۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-silver-cuff" data-product-name="دستبند النگویی نقره" data-product-price="4600000" data-product-image="../assets/images/jewelry/products/cuff.svg"
+  data-cat="نقره" data-brand="" data-price-sort="4600000" data-rating-sort="4.5" data-badges="new">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/cuff.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-new">جدید</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن دستبند النگویی نقره به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن دستبند النگویی نقره به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">نقره</p>
+    <h3 class="p-title"><a href="product.html">دستبند النگویی نقره</a></h3>
+
+    <p class="p-meta">نقره‌ی ۹۲۵ · ۱۸ گرم<br>بدون نگین</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۵</strong> (۲۶ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+
+        <span><span class="price-now"><span class="num">۴<span class="num-sep">٬</span>۶۰۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="je-moon-pendant" data-product-name="آویز ماه و ستاره" data-product-price="13900000" data-product-image="../assets/images/jewelry/products/moon.svg"
+  data-cat="آویز" data-brand="" data-price-sort="13900000" data-rating-sort="4.8" data-badges="">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/jewelry/products/moon.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن آویز ماه و ستاره به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن آویز ماه و ستاره به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">آویز</p>
+    <h3 class="p-title"><a href="product.html">آویز ماه و ستاره</a></h3>
+
+    <p class="p-meta">طلای زرد ۱۸ عیار · ۱٫۹ گرم<br>زیرکنیا</p>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۸</strong> (۳۹ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+        <span class="p-price-label">قیمت امروز:</span>
+
+        <span><span class="price-now"><span class="num">۱۳<span class="num-sep">٬</span>۹۰۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+
+      </div>
+
+      <p class="shop-empty" data-shop-empty hidden>محصولی با این فیلترها پیدا نشد. <button type="button" data-filters-reset>حذف فیلترها</button></p>
+
+      <nav class="pagination" aria-label="صفحه‌بندی نتایج" data-pagination hidden></nav>
+    </div>
+  </div>
+</main>
+<!-- ===== شروع: فوتر ===== -->
+<footer class="site-footer">
+  <div class="container-site">
+    <ul role="list" class="footer-features" aria-label="مزیت‌های خرید">
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-certificate"/></svg></span>
+        <span>
+          <span class="feature-title block">گواهی اصالت</span>
+          <span class="feature-text block">با فاکتور رسمی و کد رهگیری</span>
+        </span>
+      </li>
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-scale"/></svg></span>
+        <span>
+          <span class="feature-title block">قیمت شفاف</span>
+          <span class="feature-text block">وزن، اجرت و سود جداگانه</span>
+        </span>
+      </li>
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></span>
+        <span>
+          <span class="feature-title block">حکاکی رایگان</span>
+          <span class="feature-text block">روی حلقه و آویز</span>
+        </span>
+      </li>
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
+        <span>
+          <span class="feature-title block">ارسال بیمه‌شده</span>
+          <span class="feature-text block">در بسته‌بندی پلمپ</span>
+        </span>
+      </li>
+
+    </ul>
+
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" aria-label="مهتاب، صفحه‌ی اصلی">
+  <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <span class="logo-text">
+    <span class="logo-name">مهتاب</span>
+    <span class="logo-tag">طلا و جواهر</span>
+  </span>
+</a>
+
+        <p class="footer-about">مهتاب، گالری طلا و جواهری با طراحی‌های ماندگار؛ همه‌ی قطعات عیار رسمی دارند و قیمت هر محصول به‌صورت شفاف بر اساس وزن، اجرت و نرخ روز طلا محاسبه می‌شود.</p>
+        <ul class="footer-contact">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+982100000000" dir="ltr">۰۲۱ ‑ ۱۲۳۴ ۵۶۷۸</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>تهران، خیابان ولیعصر، کوچه‌ی نمونه، پلاک ۱۲</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>شنبه تا پنج‌شنبه، ۹ تا ۲۱</span></li>
+        </ul>
+      </div>
+
+      <nav aria-labelledby="footer-shop">
+        <h2 class="footer-title" id="footer-shop">فروشگاه</h2>
+        <ul class="footer-links">
+          <li><a href="shop.html?cat=ring">انگشتر</a></li><li><a href="shop.html?cat=necklace">گردنبند و آویز</a></li><li><a href="shop.html?cat=bracelet">دستبند</a></li><li><a href="shop.html?cat=earring">گوشواره</a></li><li><a href="shop.html?collection=wedding">حلقه‌ی ازدواج</a></li><li><a href="shop.html?metal=silver">زیورآلات نقره</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-service">
+        <h2 class="footer-title" id="footer-service">خدمات مشتریان</h2>
+        <ul class="footer-links">
+          <li><a href="track-order.html">پیگیری سفارش</a></li><li><a href="faq.html">سوالات متداول</a></li><li><a href="terms.html#returns">شرایط ارسال و بازگشت</a></li><li><a href="account.html">حساب کاربری</a></li><li><a href="wishlist.html">علاقه‌مندی‌ها</a></li><li><a href="compare.html">مقایسه‌ی محصولات</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-info">
+        <h2 class="footer-title" id="footer-info">مهتاب</h2>
+        <ul class="footer-links">
+          <li><a href="about.html">درباره‌ی ما</a></li><li><a href="contact.html">تماس با ما</a></li><li><a href="blog.html">مجله</a></li><li><a href="terms.html">قوانین و مقررات</a></li><li><a href="privacy.html">حریم خصوصی</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-news">
+        <h2 class="footer-title">عضویت در خبرنامه</h2>
+        <p>از کالکشن‌های تازه و تخفیف‌های ویژه زودتر از همه باخبر شوید.</p>
+        <!-- برای ثبت واقعی ایمیل‌ها، ویژگی action را با آدرس سرویس خبرنامه‌ی خود به فرم اضافه کنید -->
+        <form class="news-form" method="post" novalidate data-newsletter>
+          <label class="sr-only" for="news-email">ایمیل شما</label>
+          <input id="news-email" type="email" name="email" dir="ltr" placeholder="ایمیل شما" autocomplete="email" aria-describedby="news-email-error">
+          <button type="submit">عضویت</button>
+          <p class="form-error" id="news-email-error" data-newsletter-error hidden></p>
+        </form>
+        <p class="news-success" tabindex="-1" data-newsletter-success hidden>ممنون! عضویت شما ثبت شد.</p>
+
+        <!-- لینک صفحه‌های شبکه‌های اجتماعی خود را جایگزین کنید (فعلاً به صفحه‌ی تماس می‌روند) -->
+        <ul role="list" class="socials" aria-label="شبکه‌های اجتماعی">
+          <li><a href="contact.html#social" aria-label="اینستاگرام"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="contact.html#social" aria-label="تلگرام"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></li>
+          <li><a href="contact.html#social" aria-label="واتس‌اپ"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a></li>
+        </ul>
+
+        <!-- محل نمادهای اعتماد: کد یا تصویر نمادهای سایت خود را به‌جای این دو کادر قرار دهید -->
+        <ul role="list" class="trust-slots" aria-label="نمادهای اعتماد">
+          <li class="trust-slot">محل نماد اعتماد</li>
+          <li class="trust-slot">محل نماد ساماندهی</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container-site footer-bottom-inner">
+      <p>© ۱۴۰۵ مهتاب. همه‌ی حقوق محفوظ است.</p>
+      <p class="pay-list"><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg> پرداخت امن با همه‌ی کارت‌های بانکی</p>
+      <a class="to-top" href="#top">بازگشت به بالا <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+<!-- ===== پایان: فوتر ===== -->
+
+  <script src="../assets/js/main.js" defer></script>
+
+  <!-- سوییچر دموها فقط برای پیش‌نمایش است؛ برای حذف، همین یک خط را پاک کنید -->
+  <script src="../assets/js/demo-switcher.js" defer></script>
+
+  <!-- اسکریپت‌های شخصی خود را در custom.js بنویسید (همیشه آخر بارگذاری می‌شود) -->
+  <script src="../assets/js/custom.js" defer></script>
+</body>
+</html>

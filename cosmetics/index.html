@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="demo-cosmetics" data-demo="cosmetics">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>صفحه‌ی اصلی | مهتاب | فروشگاه آرایشی و بهداشتی</title>
+  <meta name="description" content="مهتاب، فروشگاه اینترنتی محصولات مراقبت از پوست، مو و آرایشی اصل با ارسال سریع">
+  <meta name="theme-color" content="#FFF8F6">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- فونت‌ها (داخل فایل CSS جاسازی شده‌اند تا بدون سرور هم کار کنند) -->
+
+  <link rel="preload" href="../assets/css/fonts/vazirmatn.css" as="style">
+  <link rel="stylesheet" href="../assets/css/fonts/vazirmatn.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../assets/css/fonts/vazirmatn.css"></noscript>
+
+  <link rel="preload" href="../assets/css/fonts/shabnam.css" as="style">
+  <link rel="stylesheet" href="../assets/css/fonts/shabnam.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../assets/css/fonts/shabnam.css"></noscript>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- تغییرات شخصی خود را در custom.css بنویسید (همیشه آخر بارگذاری می‌شود) -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- آیکون‌ها (طراحی اختصاصی قالب، خطی ۲۴×۲۴). استفاده: <svg class="icon"><use href="#i-search"/></svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="0 0 40 40"><path d="M25.5 6.5a14 14 0 1 0 8 23.6A11.5 11.5 0 0 1 25.5 6.5Z" fill="currentColor"/><path d="M29.5 9.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9Z" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.75"/><path d="M4.75 20c.9-3.6 3.8-5.5 7.25-5.5s6.35 1.9 7.25 5.5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" class="i-heart"><path d="M12 19.5s-7.5-4.4-7.5-10A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7.5 2.5c0 5.6-7.5 10-7.5 10Z"/></symbol>
+  <symbol id="i-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 4 7l3 3M4 7h12M17 14l3 3-3 3M20 17H8"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 8h14l-1 12H6Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M10 17h10"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m5-5-5 5 5 5"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-5 5 5-5 5 5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.9Z" fill="currentColor"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4-2 1.5a10 10 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 6.5h11v9H3ZM14 9.5h3.5l3 3v3H14Z"/><circle cx="7" cy="17.5" r="1.8" fill="currentColor" stroke="none"/><circle cx="17" cy="17.5" r="1.8" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5 4.5 8.5 8 12"/><path d="M4.5 8.5H14a5.5 5.5 0 0 1 0 11h-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5 19 6v5.5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6Z"/><path d="m9 12 2.2 2.2L15.5 10" stroke-linecap="round"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14v-2a7.5 7.5 0 0 1 15 0v2"/><path d="M4.5 13.5h3v5h-1.5a1.5 1.5 0 0 1-1.5-1.5ZM19.5 13.5h-3v5h1.5a1.5 1.5 0 0 0 1.5-1.5ZM16.5 18.5c0 1.5-1.5 2-4 2"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="5.5" width="16" height="14" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 9h16v3.5H4ZM5.5 12.5h13V20h-13ZM12 9v11"/><path d="M12 9C10.5 5 7 5 7.5 7.5 8 9 12 9 12 9Zm0 0c1.5-4 5-4 4.5-1.5C16 9 12 9 12 9Z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.5a6 6 0 0 1-6-6c0-4 3.5-5.5 4-10 3 2 3 5 3 6.5 1-1 1.5-2 1.6-3.2C17 9.5 18 12 18 14.5a6 6 0 0 1-6 6Z"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M5 7h14"/><path d="m5 7-2.5 6a2.5 2.5 0 0 0 5 0Zm14 0-2.5 6a2.5 2.5 0 0 0 5 0Z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 8 12 4l8 4v8.5L12 20.5 4 16.5Z"/><path d="m4 8 8 4 8-4M12 12v8.5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14Z"/><path d="M5 19c3-4 6-7 9-9"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="12.5" rx="1.5"/><path d="M7 10.5h6M7 14h10" stroke-linecap="round"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 8h3.5L9 5.5h6L16.5 8H20v11H4Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5s6 6.5 6 10.5a6 6 0 0 1-12 0c0-4 6-10.5 6-10.5Z"/></symbol>
+  <symbol id="i-certificate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="12" rx="1.5"/><path d="M7 8.5h10M7 12h5" stroke-linecap="round"/><circle cx="16" cy="15.5" r="2.3"/><path d="m14.8 17.5-.8 3 2-1 2 1-.8-3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M15.5 4.5 19.5 8.5 9 19H5v-4Z"/><path d="m13 7 4 4"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M3.5 10h17"/><path d="M7 15h3" stroke-linecap="round"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r=".9" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M20.5 4.5 3.5 11l5.5 2 2 6 3-3.5 4.5 3.5Z"/><path d="m9 13 8-5.5"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4.5 19.5 5.6 16A8 8 0 1 1 8.4 18.6Z"/><path d="M9.3 8.8c.2 2.6 2.4 4.9 5 5.4l1.1-1.3-1.7-.9-.8.8c-1-.4-1.9-1.3-2.4-2.4l.8-.8-.8-1.8Z" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+  <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+<!-- ===== شروع: نوار بالای صفحه ===== -->
+<div class="topbar" id="top">
+  <div class="container-site topbar-inner">
+    <p class="topbar-text">نمونه‌ی رایگان با هر سفارش · ارسال رایگان بالای ۹۰۰ هزار تومان</p>
+    <ul role="list" class="topbar-links" aria-label="پیوندهای سریع">
+      <li><a href="track-order.html">پیگیری سفارش</a></li>
+      <li><a href="faq.html">سوالات متداول</a></li>
+      <li><a href="contact.html">تماس با ما</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ===== پایان: نوار بالای صفحه ===== -->
+
+<!-- ===== شروع: هدر (نوع آن در demo.json با گزینه‌ی header تعیین می‌شود: centered یا search) ===== -->
+<header class="site-header header--search" id="site-header">
+  <div class="container-site header-main">
+
+    <div class="header-start">
+      <button type="button" class="icon-btn header-burger" data-drawer-open="mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="باز کردن منو">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+      <button type="button" class="icon-btn header-search-toggle" data-search-toggle aria-controls="search-panel" aria-expanded="false" aria-label="جست‌وجو">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="search-toggle-label" aria-hidden="true">جست‌وجو</span>
+      </button>
+    </div>
+
+    <a class="logo" href="index.html" aria-label="مهتاب، صفحه‌ی اصلی">
+  <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <span class="logo-text">
+    <span class="logo-name">مهتاب</span>
+    <span class="logo-tag">آرایشی و بهداشتی</span>
+  </span>
+</a>
+
+    <form class="header-search" role="search" action="search.html" method="get">
+      <div class="search-field">
+        <label class="sr-only" for="header-q">جست‌وجو در فروشگاه</label>
+        <input id="header-q" type="search" name="q" placeholder="جست‌وجوی کرم، سرم، شامپو…" autocomplete="off">
+        <button type="submit" aria-label="جست‌وجو"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></button>
+      </div>
+    </form>
+
+    <div class="header-actions">
+      <a class="icon-btn desk-only" href="login.html" aria-label="ورود یا ثبت‌نام"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></a>
+      <a class="icon-btn desk-only" href="compare.html" aria-label="مقایسه‌ی محصولات">
+        <svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg><span class="count-badge" data-compare-count hidden></span>
+      </a>
+      <a class="icon-btn desk-only" href="wishlist.html" aria-label="علاقه‌مندی‌ها">
+        <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span class="count-badge" data-wish-count hidden></span>
+      </a>
+      <button type="button" class="icon-btn" data-drawer-open="mini-cart" aria-controls="mini-cart" aria-expanded="false" aria-label="سبد خرید، خالی" data-cart-open>
+        <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span class="count-badge" data-cart-count hidden></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- منوی اصلی دسکتاپ؛ گزینه‌های دارای مگامنو با کلیک یا نگه داشتن ماوس باز می‌شوند -->
+  <nav class="main-nav" aria-label="منوی اصلی">
+    <ul class="container-site main-nav-list">
+
+      <li class="main-nav-item">
+
+        <button type="button" class="main-nav-link" aria-expanded="false" aria-controls="mega-0" data-mega-trigger>
+          مراقبت از پوست <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="mega" id="mega-0" data-mega>
+          <div class="container-site mega-inner">
+            <div class="mega-columns">
+              <div class="mega-head">
+                <p class="mega-title font-heading">مراقبت از پوست</p>
+                <a class="mega-all" href="shop.html?cat=skincare">مشاهده‌ی همه <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">پاک‌کننده‌ها</p>
+                <ul>
+                  <li><a href="shop.html?cat=cleanser">ژل و فوم شست‌وشو</a></li><li><a href="shop.html?cat=micellar">میسلار واتر</a></li><li><a href="shop.html?cat=toner">تونر</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">درمان و آبرسانی</p>
+                <ul>
+                  <li><a href="shop.html?cat=serum">سرم</a></li><li><a href="shop.html?cat=moisturizer">کرم آبرسان</a></li><li><a href="shop.html?cat=eye">دور چشم</a></li><li><a href="shop.html?cat=mask">ماسک صورت</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">بر اساس نوع پوست</p>
+                <ul>
+                  <li><a href="shop.html?skin=dry">پوست خشک</a></li><li><a href="shop.html?skin=oily">پوست چرب</a></li><li><a href="shop.html?skin=sensitive">پوست حساس</a></li><li><a href="shop.html?skin=combination">پوست مختلط</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="mega-promos">
+
+              <a class="promo-card" href="shop.html?collection=routine">
+                <img src="../assets/images/cosmetics/promo/promo-routine.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+                <span class="promo-card-body">
+                  <span class="promo-card-title block">روتین سه‌مرحله‌ای</span>
+                  <span class="promo-card-text block">پاک‌سازی، درمان، محافظت</span>
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <button type="button" class="main-nav-link" aria-expanded="false" aria-controls="mega-1" data-mega-trigger>
+          آرایشی <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="mega" id="mega-1" data-mega>
+          <div class="container-site mega-inner">
+            <div class="mega-columns">
+              <div class="mega-head">
+                <p class="mega-title font-heading">آرایشی</p>
+                <a class="mega-all" href="shop.html?cat=makeup">مشاهده‌ی همه <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">صورت</p>
+                <ul>
+                  <li><a href="shop.html?cat=foundation">کرم پودر</a></li><li><a href="shop.html?cat=concealer">کانسیلر</a></li><li><a href="shop.html?cat=blush">رژگونه</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-col">
+                <p class="mega-col-title">چشم و لب</p>
+                <ul>
+                  <li><a href="shop.html?cat=mascara">ریمل</a></li><li><a href="shop.html?cat=eyeshadow">سایه</a></li><li><a href="shop.html?cat=lipstick">رژ لب</a></li><li><a href="shop.html?cat=lipbalm">بالم لب</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="mega-promos">
+
+              <a class="promo-card" href="shop.html?cat=lipstick">
+                <img src="../assets/images/cosmetics/promo/promo-lip.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+                <span class="promo-card-body">
+                  <span class="promo-card-title block">رژهای مات پاییزی</span>
+                  <span class="promo-card-text block">۱۲ رنگ جدید</span>
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="shop.html?cat=haircare">مراقبت از مو</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="shop.html?cat=body">بهداشت بدن</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="shop.html?cat=sunscreen">ضدآفتاب</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link is-accent" href="shop.html?sale=1">پیشنهاد ویژه</a>
+
+      </li>
+
+      <li class="main-nav-item">
+
+        <a class="main-nav-link" href="blog.html">مجله‌ی زیبایی</a>
+
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- پنل جست‌وجو (در هدر وسط‌چین و موبایل) -->
+  <div class="search-panel" id="search-panel" data-search-panel hidden>
+    <div class="container-site">
+      <form role="search" action="search.html" method="get">
+        <div class="search-field">
+          <label class="sr-only" for="panel-q">جست‌وجو در فروشگاه</label>
+          <input id="panel-q" type="search" name="q" placeholder="جست‌وجوی کرم، سرم، شامپو…" autocomplete="off">
+          <button type="submit" aria-label="جست‌وجو"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></button>
+        </div>
+      </form>
+      <p class="search-hints">
+        <span>جست‌وجوهای پرطرفدار:</span>
+        <a href="shop.html?cat=skincare">مراقبت از پوست</a><a href="shop.html?cat=makeup">آرایشی</a><a href="shop.html?cat=haircare">مراقبت از مو</a><a href="shop.html?cat=body">بهداشت بدن</a>
+      </p>
+    </div>
+  </div>
+</header>
+<!-- ===== پایان: هدر ===== -->
+
+<!-- ===== شروع: منوی موبایل (کشوی سمت راست) ===== -->
+<div class="drawer drawer-start" id="mobile-menu" role="dialog" aria-modal="true" aria-label="منوی سایت" data-drawer inert>
+  <div class="drawer-head">
+    <a class="logo" href="index.html" aria-label="مهتاب، صفحه‌ی اصلی">
+  <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <span class="logo-text">
+    <span class="logo-name">مهتاب</span>
+    <span class="logo-tag">آرایشی و بهداشتی</span>
+  </span>
+</a>
+
+    <button type="button" class="icon-btn drawer-close" data-drawer-close aria-label="بستن منو"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="drawer-body">
+    <form role="search" action="search.html" method="get">
+      <div class="search-field">
+        <label class="sr-only" for="menu-q">جست‌وجو در فروشگاه</label>
+        <input id="menu-q" type="search" name="q" placeholder="جست‌وجوی کرم، سرم، شامپو…" autocomplete="off">
+        <button type="submit" aria-label="جست‌وجو"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></button>
+      </div>
+    </form>
+
+    <ul class="m-nav">
+
+      <li>
+
+        <button type="button" class="m-nav-link" aria-expanded="false" aria-controls="m-sub-0" data-disclosure>
+          مراقبت از پوست <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="m-sub" id="m-sub-0" hidden>
+
+          <p class="m-sub-title">پاک‌کننده‌ها</p>
+          <ul><li><a href="shop.html?cat=cleanser">ژل و فوم شست‌وشو</a></li><li><a href="shop.html?cat=micellar">میسلار واتر</a></li><li><a href="shop.html?cat=toner">تونر</a></li></ul>
+
+          <p class="m-sub-title">درمان و آبرسانی</p>
+          <ul><li><a href="shop.html?cat=serum">سرم</a></li><li><a href="shop.html?cat=moisturizer">کرم آبرسان</a></li><li><a href="shop.html?cat=eye">دور چشم</a></li><li><a href="shop.html?cat=mask">ماسک صورت</a></li></ul>
+
+          <p class="m-sub-title">بر اساس نوع پوست</p>
+          <ul><li><a href="shop.html?skin=dry">پوست خشک</a></li><li><a href="shop.html?skin=oily">پوست چرب</a></li><li><a href="shop.html?skin=sensitive">پوست حساس</a></li><li><a href="shop.html?skin=combination">پوست مختلط</a></li></ul>
+
+          <a class="m-all" href="shop.html?cat=skincare">مشاهده‌ی همه‌ی مراقبت از پوست</a>
+        </div>
+
+      </li>
+
+      <li>
+
+        <button type="button" class="m-nav-link" aria-expanded="false" aria-controls="m-sub-1" data-disclosure>
+          آرایشی <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <div class="m-sub" id="m-sub-1" hidden>
+
+          <p class="m-sub-title">صورت</p>
+          <ul><li><a href="shop.html?cat=foundation">کرم پودر</a></li><li><a href="shop.html?cat=concealer">کانسیلر</a></li><li><a href="shop.html?cat=blush">رژگونه</a></li></ul>
+
+          <p class="m-sub-title">چشم و لب</p>
+          <ul><li><a href="shop.html?cat=mascara">ریمل</a></li><li><a href="shop.html?cat=eyeshadow">سایه</a></li><li><a href="shop.html?cat=lipstick">رژ لب</a></li><li><a href="shop.html?cat=lipbalm">بالم لب</a></li></ul>
+
+          <a class="m-all" href="shop.html?cat=makeup">مشاهده‌ی همه‌ی آرایشی</a>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="shop.html?cat=haircare">مراقبت از مو</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="shop.html?cat=body">بهداشت بدن</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="shop.html?cat=sunscreen">ضدآفتاب</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link is-accent" href="shop.html?sale=1">پیشنهاد ویژه</a>
+
+      </li>
+
+      <li>
+
+        <a class="m-nav-link" href="blog.html">مجله‌ی زیبایی</a>
+
+      </li>
+
+    </ul>
+
+    <ul class="m-links">
+      <li><a href="login.html"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg> ورود / ثبت‌نام</a></li>
+      <li><a href="wishlist.html"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> علاقه‌مندی‌ها</a></li>
+      <li><a href="compare.html"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg> مقایسه</a></li>
+      <li><a href="track-order.html"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> پیگیری سفارش</a></li>
+    </ul>
+
+    <p class="m-contact">پشتیبانی: <a href="tel:+982100000000" dir="ltr">۰۲۱ ‑ ۱۲۳۴ ۵۶۷۸</a><br>شنبه تا پنج‌شنبه، ۹ تا ۲۱</p>
+  </div>
+</div>
+<!-- ===== پایان: منوی موبایل ===== -->
+
+<!-- ===== شروع: سبد خرید کشویی (mini-cart) =====
+     سبد سمت کاربر است و در حافظه‌ی مرورگر (localStorage) ذخیره می‌شود؛ هر دمو سبد جداگانه دارد.
+     برای پرداخت واقعی، آن را به فروشگاه یا سیستم سفارش خود وصل کنید (راهنما را ببینید). -->
+<div class="drawer drawer-end" id="mini-cart" role="dialog" aria-modal="true" aria-labelledby="mini-cart-title" data-drawer data-mini-cart inert>
+  <div class="drawer-head">
+    <h2 class="drawer-title" id="mini-cart-title">سبد خرید <span class="text-sm font-normal text-muted" data-cart-heading-count></span></h2>
+    <button type="button" class="icon-btn drawer-close" data-drawer-close aria-label="بستن سبد خرید"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+
+  <div class="drawer-body">
+    <ul class="cart-items" role="list" data-cart-items aria-label="کالاهای سبد خرید"></ul>
+    <div class="cart-empty" data-cart-empty>
+      <svg class="cart-empty-art" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M30 46h60l-5 54H35Z"/>
+        <path d="M46 52V40a14 14 0 0 1 28 0v12" fill="none"/>
+        <path d="M86 26a12 12 0 1 0 8 20 9.5 9.5 0 0 1-8-20Z"/>
+      </svg>
+      <p class="cart-empty-title">سبد خرید شما خالی است</p>
+      <p class="cart-empty-text">هنوز محصولی به سبد اضافه نکرده‌اید.</p>
+      <a href="shop.html" class="btn btn-primary" data-drawer-close>مشاهده‌ی محصولات</a>
+    </div>
+  </div>
+
+  <div class="drawer-foot" data-cart-foot>
+    <div class="cart-total">
+      <span>جمع کل</span>
+      <p><span class="cart-total-amount" data-cart-total>۰</span> <span class="text-sm">تومان</span></p>
+    </div>
+    <p class="cart-note">هزینه‌ی ارسال در مرحله‌ی تسویه حساب محاسبه می‌شود.</p>
+    <div class="cart-buttons">
+      <a href="cart.html" class="btn btn-outline">مشاهده‌ی سبد</a>
+      <a href="checkout.html" class="btn btn-primary">تسویه حساب</a>
+    </div>
+  </div>
+  <p class="sr-only" aria-live="polite" data-cart-status></p>
+</div>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<!-- ===== پایان: سبد خرید کشویی ===== -->
+
+<main id="main">
+
+  <!-- ===== شروع: هیرو ===== -->
+  <section class="ed-hero" aria-labelledby="hero-title">
+    <div class="container-site ed-hero-grid">
+      <div class="ed-hero-text reveal">
+        <p class="eyebrow">مراقبت پوست، ساده و اصولی</p>
+        <h1 class="ed-hero-title" id="hero-title">پوستی آرام، هر روز</h1>
+        <p class="ed-hero-lead">سرم‌ها و کرم‌های آبرسان با فرمول‌های اثبات‌شده؛ برای روتینی که هم ساده است و هم واقعاً جواب می‌دهد.</p>
+        <div class="ed-hero-actions">
+          <a class="btn btn-primary" href="shop.html?cat=skincare">خرید مراقبت پوست <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-outline" href="#routine">دیدن روتین پیشنهادی</a>
+        </div>
+        <ul class="ed-hero-stats" role="list" aria-label="درباره‌ی فروشگاه">
+          <li><strong>۱۲۰+</strong> محصول اصل</li>
+          <li><strong>رایگان</strong> نمونه با هر سفارش</li>
+          <li><strong>مشاوره‌ی</strong> رایگان پوست</li>
+        </ul>
+      </div>
+      <figure class="ed-hero-main reveal" style="--d:120ms">
+        <img src="../assets/images/cosmetics/home/hero-main.svg" alt="سرم آبرسان هیالورونیک اسید" width="1200" height="1500" fetchpriority="high">
+        <figcaption class="ed-hero-caption">
+          <span>سرم آبرسان هیالورونیک اسید</span>
+          <a href="product.html">مشاهده <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </figcaption>
+      </figure>
+      <figure class="ed-hero-side reveal" style="--d:240ms">
+        <img src="../assets/images/cosmetics/home/hero-side.svg" alt="کرم مرطوب‌کننده‌ی سرامید" width="900" height="1200">
+        <figcaption>کرم مرطوب‌کننده‌ی سرامید</figcaption>
+      </figure>
+    </div>
+  </section>
+  <!-- ===== پایان: هیرو ===== -->
+
+  <!-- ===== شروع: دسته‌بندی‌ها ===== -->
+  <section class="section" aria-labelledby="cats-title">
+    <div class="container-site">
+      <div class="section-head reveal">
+        <h2 class="section-title" id="cats-title">خرید بر اساس نیاز پوست</h2>
+        <a class="link-more" href="shop.html">همه‌ی محصولات <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="cat-row" role="list">
+        <li class="reveal"><a class="cat-tile" href="shop.html?cat=skincare"><img src="../assets/images/cosmetics/home/cat-skincare.svg" alt="" width="800" height="1000" loading="lazy" decoding="async"><span class="cat-tile-name">مراقبت از پوست</span><span class="cat-tile-count">۴۸ محصول</span></a></li>
+        <li class="reveal" style="--d:60ms"><a class="cat-tile" href="shop.html?cat=makeup"><img src="../assets/images/cosmetics/home/cat-makeup.svg" alt="" width="800" height="1000" loading="lazy" decoding="async"><span class="cat-tile-name">آرایشی</span><span class="cat-tile-count">۳۶ محصول</span></a></li>
+        <li class="reveal" style="--d:120ms"><a class="cat-tile" href="shop.html?cat=haircare"><img src="../assets/images/cosmetics/home/cat-hair.svg" alt="" width="800" height="1000" loading="lazy" decoding="async"><span class="cat-tile-name">مراقبت از مو</span><span class="cat-tile-count">۲۴ محصول</span></a></li>
+        <li class="reveal" style="--d:180ms"><a class="cat-tile" href="shop.html?cat=sunscreen"><img src="../assets/images/cosmetics/home/cat-sun.svg" alt="" width="800" height="1000" loading="lazy" decoding="async"><span class="cat-tile-name">ضدآفتاب</span><span class="cat-tile-count">۱۴ محصول</span></a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- ===== پایان: دسته‌بندی‌ها ===== -->
+
+  <!-- ===== شروع: محصولات با زبانه ===== -->
+  <section class="section pt-0" aria-labelledby="picks-title">
+    <div class="container-site">
+      <div class="section-head reveal">
+        <h2 class="section-title" id="picks-title">تازه‌های فروشگاه</h2>
+        <div class="tabs" role="tablist" aria-label="دسته‌بندی محصولات" data-tabs>
+          <button type="button" class="tab" role="tab" id="tab-new" aria-selected="true" aria-controls="panel-new">جدیدترین</button>
+          <button type="button" class="tab" role="tab" id="tab-best" aria-selected="false" aria-controls="panel-best" tabindex="-1">پرفروش‌ترین</button>
+          <button type="button" class="tab" role="tab" id="tab-sale" aria-selected="false" aria-controls="panel-sale" tabindex="-1">تخفیف‌دار</button>
+        </div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-new" aria-labelledby="tab-new" tabindex="0">
+        <div class="p-grid"><!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-ceramide-cream" data-product-name="کرم مرطوب‌کننده‌ی سرامید" data-product-price="780000" data-product-image="../assets/images/cosmetics/products/cream.svg"
+  data-cat="کرم آبرسان" data-brand="گلبرگ" data-price-sort="780000" data-rating-sort="4.9" data-badges="new">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/cream.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-new">جدید</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن کرم مرطوب‌کننده‌ی سرامید به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن کرم مرطوب‌کننده‌ی سرامید به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">گلبرگ · کرم آبرسان</p>
+    <h3 class="p-title"><a href="product.html">کرم مرطوب‌کننده‌ی سرامید</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">پوست خشک و حساس</li><li class="p-chip">۵۰ میلی‌لیتر</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۹</strong> (۱۵۶ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <span><span class="price-now"><span class="num">۷۸۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-clay-mask" data-product-name="ماسک خاک رس پاک‌کننده" data-product-price="460000" data-product-image="../assets/images/cosmetics/products/mask.svg"
+  data-cat="ماسک صورت" data-brand="گلبرگ" data-price-sort="460000" data-rating-sort="4.6" data-badges="new">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/mask.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-new">جدید</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن ماسک خاک رس پاک‌کننده به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن ماسک خاک رس پاک‌کننده به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">گلبرگ · ماسک صورت</p>
+    <h3 class="p-title"><a href="product.html">ماسک خاک رس پاک‌کننده</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">پوست چرب</li><li class="p-chip">۱۰۰ میلی‌لیتر</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۶</strong> (۴۴ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <span><span class="price-now"><span class="num">۴۶۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+</div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-best" aria-labelledby="tab-best" tabindex="0" hidden>
+        <div class="p-grid"><!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-hyaluronic-serum" data-product-name="سرم آبرسان هیالورونیک اسید" data-product-price="552000" data-product-image="../assets/images/cosmetics/products/serum.svg"
+  data-cat="سرم" data-brand="گلبرگ" data-price-sort="552000" data-rating-sort="4.8" data-badges="sale|bestseller">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/serum.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-sale">٪۲۰ تخفیف</li>
+
+      <li class="badge badge-soft">پرفروش</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن سرم آبرسان هیالورونیک اسید به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن سرم آبرسان هیالورونیک اسید به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">گلبرگ · سرم</p>
+    <h3 class="p-title"><a href="product.html">سرم آبرسان هیالورونیک اسید</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">همه‌ی انواع پوست</li><li class="p-chip">۳۰ میلی‌لیتر</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۸</strong> (۲۱۴ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <del><span class="sr-only">قیمت قبلی: </span><span class="num">۶۹۰<span class="num-sep">٬</span>۰۰۰</span></del>
+        <span><span class="price-now"><span class="num">۵۵۲<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-spf50" data-product-name="کرم ضدآفتاب SPF50 بی‌رنگ" data-product-price="560000" data-product-image="../assets/images/cosmetics/products/sunscreen.svg"
+  data-cat="ضدآفتاب" data-brand="ماهرخ" data-price-sort="560000" data-rating-sort="4.7" data-badges="bestseller">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/sunscreen.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-soft">پرفروش</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن کرم ضدآفتاب SPF50 بی‌رنگ به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن کرم ضدآفتاب SPF50 بی‌رنگ به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">ماهرخ · ضدآفتاب</p>
+    <h3 class="p-title"><a href="product.html">کرم ضدآفتاب SPF50 بی‌رنگ</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">همه‌ی انواع پوست</li><li class="p-chip">۵۰ میلی‌لیتر</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۷</strong> (۱۸۹ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <span><span class="price-now"><span class="num">۵۶۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+</div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-sale" aria-labelledby="tab-sale" tabindex="0" hidden>
+        <div class="p-grid"><!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-hyaluronic-serum" data-product-name="سرم آبرسان هیالورونیک اسید" data-product-price="552000" data-product-image="../assets/images/cosmetics/products/serum.svg"
+  data-cat="سرم" data-brand="گلبرگ" data-price-sort="552000" data-rating-sort="4.8" data-badges="sale|bestseller">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/serum.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-sale">٪۲۰ تخفیف</li>
+
+      <li class="badge badge-soft">پرفروش</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن سرم آبرسان هیالورونیک اسید به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن سرم آبرسان هیالورونیک اسید به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">گلبرگ · سرم</p>
+    <h3 class="p-title"><a href="product.html">سرم آبرسان هیالورونیک اسید</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">همه‌ی انواع پوست</li><li class="p-chip">۳۰ میلی‌لیتر</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۸</strong> (۲۱۴ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <del><span class="sr-only">قیمت قبلی: </span><span class="num">۶۹۰<span class="num-sep">٬</span>۰۰۰</span></del>
+        <span><span class="price-now"><span class="num">۵۵۲<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-matte-lipstick" data-product-name="رژ لب مات ماندگار" data-product-price="280000" data-product-image="../assets/images/cosmetics/products/lipstick.svg"
+  data-cat="رژ لب" data-brand="نیلوفر" data-price-sort="280000" data-rating-sort="4.5" data-badges="sale">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/lipstick.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-sale">٪۲۰ تخفیف</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن رژ لب مات ماندگار به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن رژ لب مات ماندگار به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">نیلوفر · رژ لب</p>
+    <h3 class="p-title"><a href="product.html">رژ لب مات ماندگار</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">۱۲ رنگ</li><li class="p-chip">۳٫۵ گرم</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۵</strong> (۷۷ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <del><span class="sr-only">قیمت قبلی: </span><span class="num">۳۵۰<span class="num-sep">٬</span>۰۰۰</span></del>
+        <span><span class="price-now"><span class="num">۲۸۰<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+<!-- کارت محصول: داده‌ها از src/data/products/<دمو>.json می‌آیند. ویژگی‌های data-product برای سبد خرید لازم است. -->
+<article class="p-card" data-product data-product-id="co-eye-cream" data-product-name="کرم دور چشم کافئین" data-product-price="499000" data-product-image="../assets/images/cosmetics/products/eye.svg"
+  data-cat="دور چشم" data-brand="ماهرخ" data-price-sort="499000" data-rating-sort="4.5" data-badges="sale">
+  <div class="p-media">
+    <a class="p-media-link" href="product.html" tabindex="-1" aria-hidden="true">
+      <img src="../assets/images/cosmetics/products/eye.svg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+
+    </a>
+
+    <ul role="list" class="p-badges" aria-label="ویژگی‌ها">
+
+      <li class="badge badge-sale">٪۲۰ تخفیف</li>
+
+    </ul>
+
+    <div class="p-tools">
+      <button type="button" class="p-tool" data-wish aria-pressed="false" aria-label="افزودن کرم دور چشم کافئین به علاقه‌مندی‌ها"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></button>
+      <button type="button" class="p-tool" data-compare aria-pressed="false" aria-label="افزودن کرم دور چشم کافئین به مقایسه"><svg class="icon" aria-hidden="true"><use href="#i-compare"/></svg></button>
+    </div>
+
+  </div>
+
+  <div class="p-body">
+    <p class="p-cat">ماهرخ · دور چشم</p>
+    <h3 class="p-title"><a href="product.html">کرم دور چشم کافئین</a></h3>
+
+    <ul role="list" class="p-chips" aria-label="مشخصات"><li class="p-chip">همه‌ی انواع پوست</li><li class="p-chip">۱۵ میلی‌لیتر</li></ul>
+
+    <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> <strong>۴٫۵</strong> (۵۲ نظر)</p>
+
+    <div class="p-foot">
+      <div class="price" data-card-price>
+
+        <del><span class="sr-only">قیمت قبلی: </span><span class="num">۶۲۰<span class="num-sep">٬</span>۰۰۰</span></del>
+        <span><span class="price-now"><span class="num">۴۹۹<span class="num-sep">٬</span>۰۰۰</span></span> <span class="currency">تومان</span></span>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-block p-add" data-add-to-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span data-cart-label>افزودن به سبد</span></button>
+
+    </div>
+  </div>
+</article>
+</div>
+      </div>
+      <p class="mt-10 text-center"><a class="btn btn-outline" href="shop.html">مشاهده‌ی همه‌ی محصولات</a></p>
+    </div>
+  </section>
+  <!-- ===== پایان: محصولات با زبانه ===== -->
+
+  <!-- ===== شروع: روتین سه‌مرحله‌ای ===== -->
+  <section class="section pt-0" id="routine" aria-labelledby="routine-title">
+    <div class="container-site">
+      <div class="section-head reveal">
+        <h2 class="section-title" id="routine-title">روتین سه‌مرحله‌ای</h2>
+        <p class="text-muted">هر روز صبح و شب، به همین ترتیب</p>
+      </div>
+      <div class="feature-trio">
+        <a class="feature-trio-card reveal" href="shop.html?cat=skincare&amp;step=cleanse">
+          <div class="feature-trio-media"><span class="feature-trio-step" aria-hidden="true">۱</span><img src="../assets/images/cosmetics/home/routine-1.svg" alt="" width="500" height="620" loading="lazy" decoding="async"></div>
+          <p class="feature-trio-title">پاک‌سازی</p>
+          <p class="feature-trio-text">با ژل یا فوم ملایم، متناسب با نوع پوست</p>
+        </a>
+        <a class="feature-trio-card reveal" style="--d:60ms" href="shop.html?cat=skincare&amp;step=treat">
+          <div class="feature-trio-media"><span class="feature-trio-step" aria-hidden="true">۲</span><img src="../assets/images/cosmetics/home/routine-2.svg" alt="" width="500" height="620" loading="lazy" decoding="async"></div>
+          <p class="feature-trio-title">درمان</p>
+          <p class="feature-trio-text">سرم مناسب دغدغه‌ی پوستی‌تان را انتخاب کنید</p>
+        </a>
+        <a class="feature-trio-card reveal" style="--d:120ms" href="shop.html?cat=skincare&amp;step=moisturize">
+          <div class="feature-trio-media"><span class="feature-trio-step" aria-hidden="true">۳</span><img src="../assets/images/cosmetics/home/routine-3.svg" alt="" width="500" height="620" loading="lazy" decoding="async"></div>
+          <p class="feature-trio-title">مرطوب‌سازی</p>
+          <p class="feature-trio-text">رطوبت روز را با کرم مناسب حفظ کنید</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== پایان: روتین سه‌مرحله‌ای ===== -->
+
+  <!-- ===== شروع: بنر تخفیف ===== -->
+  <section class="section pt-0" aria-label="پیشنهاد ویژه">
+    <div class="container-site">
+      <div class="banner banner-dark reveal">
+        <img src="../assets/images/cosmetics/home/banner-sale.svg" alt="" width="1200" height="700" loading="lazy" decoding="async">
+        <div class="banner-body">
+          <p class="eyebrow">پک‌های ترکیبی</p>
+          <h2 class="banner-title">تا ۲۵٪ تخفیف روی ست‌های مراقبتی</h2>
+          <div class="countdown" data-countdown="2026-11-21T23:59:59+03:30" role="timer" aria-label="زمان باقی‌مانده تا پایان تخفیف">
+            <span><strong data-cd="days">۰۰</strong>روز</span>
+            <span><strong data-cd="hours">۰۰</strong>ساعت</span>
+            <span><strong data-cd="minutes">۰۰</strong>دقیقه</span>
+            <span><strong data-cd="seconds">۰۰</strong>ثانیه</span>
+          </div>
+          <a class="banner-link" href="shop.html?sale=1">مشاهده‌ی تخفیف‌ها <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== پایان: بنر تخفیف ===== -->
+
+  <!-- ===== شروع: مجله‌ی زیبایی ===== -->
+  <section class="section pt-0" aria-labelledby="journal-title">
+    <div class="container-site">
+      <div class="section-head reveal">
+        <h2 class="section-title" id="journal-title">از مجله‌ی زیبایی</h2>
+        <a class="link-more" href="blog.html">همه‌ی مقاله‌ها <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="post-grid">
+        <article class="post-card reveal">
+  <a class="post-media" href="blog-post.html" tabindex="-1" aria-hidden="true">
+    <img src="../assets/images/cosmetics/blog/post-1.svg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </a>
+  <p class="post-meta"><span>راهنمای پوست</span> · <time>۲۵ مهر ۱۴۰۵</time> · ۵ دقیقه مطالعه</p>
+  <h3 class="post-title"><a href="blog-post.html">ترتیب درست مصرف محصولات پوست چیست؟</a></h3>
+  <p class="post-excerpt">از پاک‌کننده تا کرم؛ ترتیب درست استفاده از محصولات تا هر کدام بهترین اثر را بگذارند.</p>
+</article>
+<article class="post-card reveal">
+  <a class="post-media" href="blog-post.html" tabindex="-1" aria-hidden="true">
+    <img src="../assets/images/cosmetics/blog/post-2.svg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </a>
+  <p class="post-meta"><span>مراقبت از مو</span> · <time>۱۸ مهر ۱۴۰۵</time> · ۴ دقیقه مطالعه</p>
+  <h3 class="post-title"><a href="blog-post.html">چرا شامپوی بدون سولفات را امتحان کنید؟</a></h3>
+  <p class="post-excerpt">تفاوت شامپوهای بدون سولفات با انواع معمولی و اینکه برای چه نوع مویی مناسب‌تر است.</p>
+</article>
+<article class="post-card reveal">
+  <a class="post-media" href="blog-post.html" tabindex="-1" aria-hidden="true">
+    <img src="../assets/images/cosmetics/blog/post-3.svg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </a>
+  <p class="post-meta"><span>راهنمای پوست</span> · <time>۲ مهر ۱۴۰۵</time> · ۳ دقیقه مطالعه</p>
+  <h3 class="post-title"><a href="blog-post.html">چرا باید در تمام فصل‌ها ضدآفتاب بزنیم؟</a></h3>
+  <p class="post-excerpt">ضدآفتاب فقط برای تابستان نیست؛ نقش آن در جلوگیری از پیری زودرس پوست در تمام سال.</p>
+</article>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== پایان: مجله‌ی زیبایی ===== -->
+
+</main>
+
+<!-- ===== شروع: فوتر ===== -->
+<footer class="site-footer">
+  <div class="container-site">
+    <ul role="list" class="footer-features" aria-label="مزیت‌های خرید">
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <span>
+          <span class="feature-title block">اصالت کالا</span>
+          <span class="feature-text block">تأمین مستقیم از نمایندگی‌ها</span>
+        </span>
+      </li>
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+        <span>
+          <span class="feature-title block">تاریخ انقضای روشن</span>
+          <span class="feature-text block">حداقل ۱۲ ماه اعتبار</span>
+        </span>
+      </li>
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg></span>
+        <span>
+          <span class="feature-title block">نمونه‌ی رایگان</span>
+          <span class="feature-text block">همراه هر سفارش</span>
+        </span>
+      </li>
+
+      <li class="feature">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-headset"/></svg></span>
+        <span>
+          <span class="feature-title block">مشاوره‌ی پوست</span>
+          <span class="feature-text block">رایگان، همه‌روزه</span>
+        </span>
+      </li>
+
+    </ul>
+
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" aria-label="مهتاب، صفحه‌ی اصلی">
+  <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <span class="logo-text">
+    <span class="logo-name">مهتاب</span>
+    <span class="logo-tag">آرایشی و بهداشتی</span>
+  </span>
+</a>
+
+        <p class="footer-about">مهتاب، فروشگاه تخصصی مراقبت از پوست و مو؛ با محصولات اصل، تاریخ انقضای روشن و مشاوره‌ی رایگان برای انتخاب روتین مناسب پوست شما.</p>
+        <ul class="footer-contact">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+982100000000" dir="ltr">۰۲۱ ‑ ۱۲۳۴ ۵۶۷۸</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>تهران، خیابان ولیعصر، کوچه‌ی نمونه، پلاک ۱۲</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>شنبه تا پنج‌شنبه، ۹ تا ۲۱</span></li>
+        </ul>
+      </div>
+
+      <nav aria-labelledby="footer-shop">
+        <h2 class="footer-title" id="footer-shop">فروشگاه</h2>
+        <ul class="footer-links">
+          <li><a href="shop.html?cat=skincare">مراقبت از پوست</a></li><li><a href="shop.html?cat=makeup">آرایشی</a></li><li><a href="shop.html?cat=haircare">مراقبت از مو</a></li><li><a href="shop.html?cat=body">بهداشت بدن</a></li><li><a href="shop.html?cat=sunscreen">ضدآفتاب</a></li><li><a href="shop.html?cat=bundles">پک‌های ترکیبی</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-service">
+        <h2 class="footer-title" id="footer-service">خدمات مشتریان</h2>
+        <ul class="footer-links">
+          <li><a href="track-order.html">پیگیری سفارش</a></li><li><a href="faq.html">سوالات متداول</a></li><li><a href="terms.html#returns">شرایط ارسال و بازگشت</a></li><li><a href="account.html">حساب کاربری</a></li><li><a href="wishlist.html">علاقه‌مندی‌ها</a></li><li><a href="compare.html">مقایسه‌ی محصولات</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-info">
+        <h2 class="footer-title" id="footer-info">مهتاب</h2>
+        <ul class="footer-links">
+          <li><a href="about.html">درباره‌ی ما</a></li><li><a href="contact.html">تماس با ما</a></li><li><a href="blog.html">مجله</a></li><li><a href="terms.html">قوانین و مقررات</a></li><li><a href="privacy.html">حریم خصوصی</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-news">
+        <h2 class="footer-title">عضویت در خبرنامه</h2>
+        <p>از کالکشن‌های تازه و تخفیف‌های ویژه زودتر از همه باخبر شوید.</p>
+        <!-- برای ثبت واقعی ایمیل‌ها، ویژگی action را با آدرس سرویس خبرنامه‌ی خود به فرم اضافه کنید -->
+        <form class="news-form" method="post" novalidate data-newsletter>
+          <label class="sr-only" for="news-email">ایمیل شما</label>
+          <input id="news-email" type="email" name="email" dir="ltr" placeholder="ایمیل شما" autocomplete="email" aria-describedby="news-email-error">
+          <button type="submit">عضویت</button>
+          <p class="form-error" id="news-email-error" data-newsletter-error hidden></p>
+        </form>
+        <p class="news-success" tabindex="-1" data-newsletter-success hidden>ممنون! عضویت شما ثبت شد.</p>
+
+        <!-- لینک صفحه‌های شبکه‌های اجتماعی خود را جایگزین کنید (فعلاً به صفحه‌ی تماس می‌روند) -->
+        <ul role="list" class="socials" aria-label="شبکه‌های اجتماعی">
+          <li><a href="contact.html#social" aria-label="اینستاگرام"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="contact.html#social" aria-label="تلگرام"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></li>
+          <li><a href="contact.html#social" aria-label="واتس‌اپ"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a></li>
+        </ul>
+
+        <!-- محل نمادهای اعتماد: کد یا تصویر نمادهای سایت خود را به‌جای این دو کادر قرار دهید -->
+        <ul role="list" class="trust-slots" aria-label="نمادهای اعتماد">
+          <li class="trust-slot">محل نماد اعتماد</li>
+          <li class="trust-slot">محل نماد ساماندهی</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container-site footer-bottom-inner">
+      <p>© ۱۴۰۵ مهتاب. همه‌ی حقوق محفوظ است.</p>
+      <p class="pay-list"><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg> پرداخت امن با همه‌ی کارت‌های بانکی</p>
+      <a class="to-top" href="#top">بازگشت به بالا <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+<!-- ===== پایان: فوتر ===== -->
+
+  <script src="../assets/js/main.js" defer></script>
+
+  <!-- سوییچر دموها فقط برای پیش‌نمایش است؛ برای حذف، همین یک خط را پاک کنید -->
+  <script src="../assets/js/demo-switcher.js" defer></script>
+
+  <!-- اسکریپت‌های شخصی خود را در custom.js بنویسید (همیشه آخر بارگذاری می‌شود) -->
+  <script src="../assets/js/custom.js" defer></script>
+</body>
+</html>

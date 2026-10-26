@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7ECD7"/><stop offset="1" stop-color="#EAD6B3"/></linearGradient>
+<radialGradient id="l" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#g)"/><rect width="1200" height="800" fill="url(#l)"/><path d="M216 800V336a384 384 0 0 1 768 0V800Z" fill="#fff" opacity=".28"/>
+<rect y="688" width="1200" height="112.00000000000001" fill="#4B2E1E" opacity=".04"/>
+<ellipse cx="600" cy="656.5" rx="187" ry="23.8" fill="#4B2E1E" opacity=".08"/>
+<g transform="translate(600.0 376.0) rotate(0) scale(1.700) translate(-200 -200)"><path d="M70 150h260v190H70Z" fill="#B98454" stroke="#4B2E1E" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/><path d="M70 150h260v190H70Z" fill="none" stroke="#4B2E1E" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84" y="164" width="72" height="77" rx="4" fill="#D9C08A" stroke="#4B2E1E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="84" y="249" width="72" height="77" rx="4" fill="#E8CF9E" stroke="#4B2E1E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="164" y="164" width="72" height="77" rx="4" fill="#E7B54E" stroke="#4B2E1E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="164" y="249" width="72" height="77" rx="4" fill="#A86B3C" stroke="#4B2E1E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="244" y="164" width="72" height="77" rx="4" fill="#C98B4E" stroke="#4B2E1E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="244" y="249" width="72" height="77" rx="4" fill="#7A9A3B" stroke="#4B2E1E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M60 130h280v20H60Z" fill="#8a5d36" stroke="#4B2E1E" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></g>
+</svg>

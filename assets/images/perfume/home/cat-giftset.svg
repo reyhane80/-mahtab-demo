@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B2420"/><stop offset="1" stop-color="#141110"/></linearGradient>
+<radialGradient id="l" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="1000" fill="url(#g)"/><rect width="800" height="1000" fill="url(#l)"/><path d="M144 1000V420a256 256 0 0 1 512 0V1000Z" fill="#fff" opacity=".28"/>
+<rect y="860" width="800" height="140" fill="#C8924A" opacity=".04"/>
+<ellipse cx="400" cy="816.5" rx="231" ry="29.400000000000002" fill="#C8924A" opacity=".08"/>
+<g transform="translate(400.0 470.0) rotate(0) scale(2.100) translate(-200 -200)"><path d="M70 200h260v150H70Z" fill="#1A1513" stroke="#C8924A" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="translate(-86 70) scale(.5)" transform-origin="200 200"><path d="M175 110h50v40h-50Z" fill="#8A7A66" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M175 60h50v50h-50Z" fill="#C8924A" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 120h100v226q0 14-14 14h-72q-14 0-14-14Z" fill="#3B2418" stroke="#C8924A" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" opacity=".96"/>
+<path d="M150 120h100v226q0 14-14 14h-72q-14 0-14-14Z" fill="url(#l)"/>
+<path d="M140 175v140" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".28"/>
+</g><g transform="translate(0 70) scale(.5)" transform-origin="200 200"><path d="M175 110h50v40h-50Z" fill="#8A7A66" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M175 60h50v50h-50Z" fill="#C8924A" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 120h100v226q0 14-14 14h-72q-14 0-14-14Z" fill="#D7A0A2" stroke="#C8924A" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" opacity=".96"/>
+<path d="M150 120h100v226q0 14-14 14h-72q-14 0-14-14Z" fill="url(#l)"/>
+<path d="M140 175v140" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".28"/>
+</g><g transform="translate(86 70) scale(.5)" transform-origin="200 200"><path d="M175 110h50v40h-50Z" fill="#8A7A66" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M175 60h50v50h-50Z" fill="#C8924A" stroke="#C8924A" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 120h100v226q0 14-14 14h-72q-14 0-14-14Z" fill="#6E95A3" stroke="#C8924A" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" opacity=".96"/>
+<path d="M150 120h100v226q0 14-14 14h-72q-14 0-14-14Z" fill="url(#l)"/>
+<path d="M140 175v140" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".28"/>
+</g>
+<path d="M70 300h260" stroke="#C8924A" stroke-width="3"/></g>
+</svg>

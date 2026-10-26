@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DDD2"/><stop offset="1" stop-color="#D6CBBB"/></linearGradient>
+<radialGradient id="l" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="700" fill="url(#g)"/><rect width="1200" height="700" fill="url(#l)"/><path d="M216 700V294a384 384 0 0 1 768 0V700Z" fill="#fff" opacity=".28"/>
+<rect y="602" width="1200" height="98.00000000000001" fill="#2A2724" opacity=".04"/>
+<ellipse cx="432" cy="567.4375" rx="163.625" ry="20.825" fill="#2A2724" opacity=".08"/>
+<g transform="translate(432.0 322.0) rotate(0) scale(1.488) translate(-200 -200)"><path d="M150 70 200 90 250 70 320 110 300 190 265 175V350H135V175l-35 15-20-80Z" fill="#A9BCD0" stroke="#2A2724" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 70 178 120 200 90 222 120 250 70 200 90Z" fill="#F6F4F0" stroke="#2A2724" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/><path d="M200 90v260" fill="none" stroke="#2A2724" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="210" cy="150" r="4" fill="#2A2724"/><circle cx="210" cy="200" r="4" fill="#2A2724"/><circle cx="210" cy="250" r="4" fill="#2A2724"/><circle cx="210" cy="300" r="4" fill="#2A2724"/>
+<path d="M150 180h40v30h-40Z" fill="none" stroke="#2A2724" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></g><ellipse cx="816.0000000000001" cy="636.125" rx="134.74999999999997" ry="17.15" fill="#2A2724" opacity=".08"/>
+<g transform="translate(816.0 434.0) rotate(0) scale(1.225) translate(-200 -200)"><path d="M80 290q0-60 40-70l60-30 30 30q40 20 110 40 30 10 30 40v20H80Z" fill="#F6F4F0" stroke="#2A2724" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M80 330h270v22H80Z" fill="#B4532A" stroke="#2A2724" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"/><path d="M150 215l20 30M170 205l20 30M190 198l20 30" stroke="#2A2724" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M240 270q40 6 80 24" fill="none" stroke="#B4532A" stroke-width="8" stroke-linecap="round"/></g>
+</svg>
