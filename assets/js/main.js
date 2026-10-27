@@ -1207,10 +1207,10 @@
   function simpleProductCard(p, extraButton) {
     const price = p.finalPrice ?? p.price;
     const sale = p.salePrice || null;
-    return `<article class="p-card" data-product data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-product-price="${price}" data-product-image="../assets/images/${p.__demo}/products/${p.image}.svg">
+    return `<article class="p-card" data-product data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-product-price="${price}" data-product-image="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}">
   <div class="p-media">
     <a class="p-media-link" href="product.html?id=${p.id}" tabindex="-1" aria-hidden="true">
-      <img src="../assets/images/${p.__demo}/products/${p.image}.svg" alt="" width="600" height="600" loading="lazy" decoding="async">
+      <img src="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}" alt="" width="600" height="600" loading="lazy" decoding="async">
     </a>
     <div class="p-tools">${extraButton || ''}</div>
   </div>
@@ -1303,7 +1303,7 @@
         .map(
           (p) => `<th scope="col">
   <button type="button" class="icon-btn compare-remove" data-compare-remove="${p.id}" aria-label="حذف ${escapeHtml(p.name)} از مقایسه">${'<svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>'}</button>
-  <img src="../assets/images/${p.__demo}/products/${p.image}.svg" alt="" width="140" height="140" loading="lazy">
+  <img src="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}" alt="" width="140" height="140" loading="lazy">
   <a href="product.html?id=${p.id}">${escapeHtml(p.name)}</a>
 </th>`
         )
@@ -1314,7 +1314,7 @@
       const addRow = `<tr><th scope="row"><span class="sr-only">افزودن به سبد</span></th>${items
         .map(
           (p) =>
-            `<td data-product data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-product-price="${p.salePrice || p.finalPrice || p.price}" data-product-image="../assets/images/${p.__demo}/products/${p.image}.svg"><button type="button" class="btn btn-sm btn-primary" data-add-to-cart><span data-cart-label>افزودن به سبد</span></button></td>`
+            `<td data-product data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-product-price="${p.salePrice || p.finalPrice || p.price}" data-product-image="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}"><button type="button" class="btn btn-sm btn-primary" data-add-to-cart><span data-cart-label>افزودن به سبد</span></button></td>`
         )
         .join('')}</tr>`;
       table.innerHTML = `<caption class="sr-only">مقایسه‌ی ویژگی‌های محصولات انتخاب‌شده</caption><thead>${head}</thead><tbody>${rows}${addRow}</tbody>`;
