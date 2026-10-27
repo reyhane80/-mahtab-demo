@@ -673,6 +673,12 @@
      هر کارت محصول ویژگی‌های data-cat، data-brand، data-colors، data-sizes،
      data-price-sort، data-rating-sort و data-badges را برای فیلتر دارد.
      ------------------------------------------------------------------------ */
+  // نشانی صفحه‌ی محصول از روی نام فایل تصویرش (product-<نام>.html)
+  function productUrl(item) {
+    const slug = String((item && item.image) || '').split('/').pop().split('.')[0];
+    return slug ? `product-${slug}.html` : 'product.html';
+  }
+
   function initShop() {
     const grid = document.querySelector('[data-shop-grid]');
     if (!grid) return;
@@ -690,6 +696,30 @@
     const sliderMax = document.querySelector('[data-price-slider-max]');
     let page = 1;
 
+    /* فیلتر از روی نشانی صفحه (لینک‌های منو و دسته‌ها): ?cat=women-coat ، ?collection=autumn ، ?style=sport ، ?sale=1 ، ?sort=newest
+       هر مقدار باید در data-tags کارت محصول باشد. اگر هیچ محصولی برچسب نداشته باشد، این فیلتر نادیده گرفته می‌شود. */
+    const params = new URLSearchParams(location.search);
+    const hasTags = cards.some((c) => c.dataset.tags);
+    const urlTags = [];
+    params.forEach((value, key) => { if (!['sort', 'sale', 'page'].includes(key) && value) urlTags.push(value); });
+    const urlSale = params.get('sale') === '1';
+    if (sortSelect && params.get('sort') && [...sortSelect.options].some((o) => o.value === params.get('sort'))) sortSelect.value = params.get('sort');
+    if ((urlTags.length && hasTags) || urlSale || params.get('sort')) {
+      const q = location.search;
+      // عنوان صفحه: نام همان دسته از روی لینک‌های منو (به‌جز «مشاهده‌ی همه»)، یا از فهرست data-filter-labels
+      let labels = {};
+      try { labels = JSON.parse((document.getElementById('filter-labels') || {}).textContent || '{}'); } catch (e) { labels = {}; }
+      const names = [...document.querySelectorAll('a[href]')]
+        .filter((a) => a.getAttribute('href').endsWith(`shop.html${q}`))
+        .map((a) => (a.querySelector('strong, span') || a).textContent.trim().split('\n')[0].trim())
+        .filter((t) => t && !t.startsWith('مشاهده'));
+      const label = labels[q.replace(/^\?/, '')] || names.sort((a, b) => a.length - b.length)[0];
+      const title = document.querySelector('.shop-head .section-title');
+      if (title && label) title.textContent = label;
+      const head = document.querySelector('.shop-head-count');
+      if (head && !head.querySelector('[data-clear-url]')) head.insertAdjacentHTML('beforeend', ' · <a href="shop.html" data-clear-url>نمایش همه‌ی محصولات</a>');
+    }
+
     const checkedValues = (name) => Array.from(document.querySelectorAll(`[data-filter="${name}"] input:checked`)).map((i) => i.value);
 
     const priceBounds = priceBox ? { min: parseInt(priceBox.dataset.min, 10), max: parseInt(priceBox.dataset.max, 10) } : null;
@@ -704,6 +734,8 @@
       const colors = checkedValues('color');
       const sizes = checkedValues('size');
       if (cats.length && !cats.includes(card.dataset.cat)) return false;
+      if (urlTags.length && hasTags && !urlTags.every((t) => (card.dataset.tags || '').split('|').includes(t))) return false;
+      if (urlSale && !(card.dataset.badges || '').split('|').includes('sale')) return false;
       if (brands.length && !brands.includes(card.dataset.brand)) return false;
       if (colors.length) {
         const cardColors = (card.dataset.colors || '').split('|');
@@ -1209,14 +1241,14 @@
     const sale = p.salePrice || null;
     return `<article class="p-card" data-product data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-product-price="${price}" data-product-image="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}">
   <div class="p-media">
-    <a class="p-media-link" href="product.html?id=${p.id}" tabindex="-1" aria-hidden="true">
+    <a class="p-media-link" href="product-${p.image}.html" tabindex="-1" aria-hidden="true">
       <img src="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}" alt="" width="600" height="600" loading="lazy" decoding="async">
     </a>
     <div class="p-tools">${extraButton || ''}</div>
   </div>
   <div class="p-body">
     <p class="p-cat">${escapeHtml(p.category || '')}</p>
-    <h3 class="p-title"><a href="product.html?id=${p.id}">${escapeHtml(p.name)}</a></h3>
+    <h3 class="p-title"><a href="product-${p.image}.html">${escapeHtml(p.name)}</a></h3>
     <div class="p-foot">
       <div class="price"><span><span class="price-now">${priceHtml(sale || price)}</span> <span class="currency">تومان</span></span></div>
       <button type="button" class="btn btn-sm p-add" data-add-to-cart>${'<svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>'} <span data-cart-label>افزودن به سبد</span></button>
@@ -1304,7 +1336,7 @@
           (p) => `<th scope="col">
   <button type="button" class="icon-btn compare-remove" data-compare-remove="${p.id}" aria-label="حذف ${escapeHtml(p.name)} از مقایسه">${'<svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>'}</button>
   <img src="../assets/images/${p.__demo}/products/${p.image}.${p.imageExt || 'svg'}" alt="" width="140" height="140" loading="lazy">
-  <a href="product.html?id=${p.id}">${escapeHtml(p.name)}</a>
+  <a href="product-${p.image}.html">${escapeHtml(p.name)}</a>
 </th>`
         )
         .join('')}</tr>`;
@@ -1344,7 +1376,7 @@
     return `<li class="cart-item cart-page-item" data-id="${escapeHtml(item.id)}">
   <img class="cart-thumb" src="${escapeHtml(item.image)}" width="90" height="90" alt="">
   <div class="cart-info">
-    <a class="cart-name" href="product.html">${escapeHtml(item.name)}</a>
+    <a class="cart-name" href="${productUrl(item)}">${escapeHtml(item.name)}</a>
     ${item.variant ? `<p class="cart-variant">${escapeHtml(item.variant)}</p>` : ''}
     <p class="cart-price">${priceHtml(item.price)} <span class="currency">تومان</span></p>
     <div class="qty" role="group" aria-label="تعداد ${escapeHtml(item.name)}">
